@@ -1,72 +1,112 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap");
 body {
-  background-color: #f1f1f1;
+  background-color: #daf1e5;
   color: #0f141e;
   font-size: 16px;
-  font-weight: normal;
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+.nBar {
+  background-color: #54bcc0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 5px 5px 5px 5px;
+}
+.nBar-list{
+  list-style-type: none;
+}
+.nBar-list .list-item{
+  display: inline-block;
+  padding: 2px 4px;
+}
+
+.container-info {
+  height: 400px;
+  margin: 10% 10% 10% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.avatar {
+  max-width: 30%;
+  height: auto;
+  margin-left: 10%;
+  border-radius: 20px;
+ 
+}
+
+.container-MainContent{
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-content: center;
+  
+}
+
 a {
   color: black;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color:#f1f1f1;
 }
+
 a:active {
   color: blue;
 }
-a:visited {
-  color: gray;
-}
-.avatar {
-  width: 300px;
-  border-radius: 50px;
-  box-shadow: 4px 4px 14px rgba(0, 0, 0, 025);
-}
+
+
+
 .info {
   display: flex;
   margin-bottom: 20px;
+  
 }
+
 @media (max-width: 700px) {
   .info {
     text-align: center;
     display: block;
   }
 }
+
 .info-text {
-  margin-left: 40px;
+  margin-left: 10%;
+  margin-right: 40px;
 }
+
 .info-text h1 {
-  margin-bottom: 80px;
-  font-size: xx-large;
+  margin-top: 40%;
+  margin-bottom: 5px;
+  font-size: 50px;
 }
+
 .info p {
-  color: #86898f;
+  color: #35373a;
   margin: 0;
+  text-align: center;
 }
+
 .info > .link a {
   color: #0f141e;
 }
-.container {
-  padding-top: 10px;
-  max-width: 750px;
-  margin: auto;
-}
-.bg-yellow {
-  background: #fff9dc;
-}
+
 .bg-green {
-  background: #e5ffe7;
-}
-.bg-red {
-  background: #ffe5e5;
+  background: #97d8c8;
 }
 
 .card {
   padding: 15px 20px;
   margin-bottom: 20px;
   border-radius: 20px;
+  
 }
 .card h2 {
   margin-bottom: 30px;
@@ -84,13 +124,18 @@ a:visited {
 .table td:nth-child(2) {
   color: black;
 }
+
+.contact{
+  margin: 8%;
+}
 .contact h2 {
   text-align: center;
 }
 .form-group label {
   display: block;
-  font-size: 14px;
-  color: #86898f;
+  font-size: 20px;
+  color: #35373a;
+  font-weight: bolder;
 }
 .form-group input,
 .form-group textarea {
@@ -99,12 +144,32 @@ a:visited {
   border: none;
   outline: none;
   font-family: inherit;
+  font-weight: bold;
+  
 }
 .btn {
-  color: black;
-  padding: 15px 20px;
+  margin-top: 2%;
+  padding: 7px 30px;
   font-family: inherit;
+  font-weight: 900;
+  border:2px solid;
+  border-radius: 4px;
   cursor: pointer;
+  transition: all 0.1s;
+  background: #97d8c8;
+}
+
+.footer{
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.btn:hover{
+  box-shadow: 0 0.5em 0.5em -0.4em;
+  transform: translateY(-0.30em);
+  cursor: pointer;
+ 
 }
 
 /*.position{
